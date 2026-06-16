@@ -230,7 +230,7 @@
             const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
             const timeStr = `(${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}:${String(now.getSeconds()).padStart(2,'0')})`;
             document.getElementById('clock').innerText = `${days[now.getDay()]}, ${now.getDate()} ${months[now.getMonth()]} ${timeStr}`;
-            const examDate = new Date('April 10, 2026 00:00:00');
+            const examDate = new Date('April 10, 2027 00:00:00');
             const diff = examDate - now;
             const d = Math.max(0, Math.floor(diff / (1000 * 60 * 60 * 24)));
             document.getElementById('countdown').innerText = `✨ ${d} Days until Exam (10 April 2027) ✨`;
